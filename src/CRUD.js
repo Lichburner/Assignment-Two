@@ -33,7 +33,7 @@ function CRUD()
             )
         }
         getData()
-    },[])
+    },[ourCollection])
 
     const crudCreate = async () => {
         await addDoc(ourCollection, {item:dataItem, objectClass:dataObjectClass, description:dataDescription, containment:dataContainment, imageURL:imageURL})
